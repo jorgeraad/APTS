@@ -6,7 +6,7 @@ The `Customer_Acceptance_Testing.md` appendix covers single-agent kill-switch te
 
 **Important Note on Verification:** For all tests below, the **Verifier** must be external to the agent runtime (e.g., a human operator, an independent out-of-band monitoring system, or a dedicated platform gateway) to ensure independent validation (APTS-AL-028 principle).
 
-## Test 1: Concurrent Halt Propagation
+## MA-T01: Concurrent Halt Propagation
 
 **Applicable Tiers:** Tier 1, Tier 2, Tier 3
 
@@ -16,7 +16,7 @@ The `Customer_Acceptance_Testing.md` appendix covers single-agent kill-switch te
 
 **Preconditions:**
 
-- Platform running $\ge$ 3 concurrent workers in the same engagement.
+- Platform running 3 or more concurrent workers in the same engagement.
 - At least one worker is actively executing long-running reconnaissance (e.g., directory enumeration).
 
 **Procedure:**
@@ -38,7 +38,7 @@ The `Customer_Acceptance_Testing.md` appendix covers single-agent kill-switch te
 
 - APTS-SC-009, APTS-HO-008, APTS-HO-009, APTS-AR-012, APTS-MR-019
 
-## Test 2: Pre-Invocation Halt Check
+## MA-T02: Pre-Invocation Halt Check
 
 **Applicable Tiers:** Tier 1, Tier 2, Tier 3
 
@@ -48,7 +48,7 @@ The `Customer_Acceptance_Testing.md` appendix covers single-agent kill-switch te
 
 **Preconditions:**
 
-- Platform running $\ge$ 2 concurrent workers.
+- Platform running 2 or more concurrent workers.
 - Worker A has an execution queue containing at least two pending tool invocations.
 
 **Procedure:**
@@ -70,7 +70,7 @@ The `Customer_Acceptance_Testing.md` appendix covers single-agent kill-switch te
 
 - APTS-HO-015, APTS-SC-018, APTS-HO-008, APTS-AR-012, APTS-MR-019
 
-## Test 3: Stale Worker Detection
+## MA-T03: Stale Worker Detection
 
 **Applicable Tiers:** Tier 1, Tier 2, Tier 3
 
@@ -80,7 +80,7 @@ The `Customer_Acceptance_Testing.md` appendix covers single-agent kill-switch te
 
 **Preconditions:**
 
-- Platform running $\ge$ 2 concurrent workers.
+- Platform running 2 or more concurrent workers.
 
 **Procedure:**
 
@@ -102,7 +102,7 @@ The `Customer_Acceptance_Testing.md` appendix covers single-agent kill-switch te
 
 - APTS-SC-009, APTS-SC-018, APTS-HO-008, APTS-AR-012, APTS-MR-019
 
-## Test 4: Aggregate Rate Budget Exhaustion
+## MA-T04: Aggregate Rate Budget Exhaustion
 
 **Applicable Tiers:** Tier 1, Tier 2, Tier 3
 
@@ -117,7 +117,7 @@ The `Customer_Acceptance_Testing.md` appendix covers single-agent kill-switch te
 
 **Procedure:**
 
-1. Instruct Worker A to execute a burst action that consumes $\ge$ 90% of the shared budget.
+1. Instruct Worker A to execute a burst action that consumes 90% or more of the shared budget.
 2. Simultaneously instruct Workers B and C to execute standard requests.
 
 **Expected Outcome:**
@@ -133,7 +133,7 @@ The `Customer_Acceptance_Testing.md` appendix covers single-agent kill-switch te
 
 - APTS-SC-004, APTS-SE-019, APTS-SC-006
 
-## Test 5: Rogue Worker Isolation & Injection Propagation
+## MA-T05: Rogue Worker Isolation & Injection Propagation
 
 **Applicable Tiers:** Tier 2, Tier 3
 
@@ -143,7 +143,7 @@ The `Customer_Acceptance_Testing.md` appendix covers single-agent kill-switch te
 
 **Preconditions:**
 
-- Platform running $\ge$ 3 concurrent workers.
+- Platform running 3 or more concurrent workers.
 
 **Procedure:**
 
@@ -164,7 +164,7 @@ The `Customer_Acceptance_Testing.md` appendix covers single-agent kill-switch te
 
 - APTS-MR-023, APTS-SE-026, APTS-AL-028, APTS-MR-002, APTS-MR-022, APTS-SC-020
 
-## Test 6: Orchestrator Silencing
+## MA-T06: Orchestrator Silencing
 
 **Applicable Tiers:** Tier 1, Tier 2, Tier 3
 
@@ -174,7 +174,7 @@ The `Customer_Acceptance_Testing.md` appendix covers single-agent kill-switch te
 
 **Preconditions:**
 
-- Platform running $\ge$ 2 concurrent workers under a primary orchestrator.
+- Platform running 2 or more concurrent workers under a primary orchestrator.
 
 **Procedure:**
 
@@ -195,7 +195,7 @@ The `Customer_Acceptance_Testing.md` appendix covers single-agent kill-switch te
 
 - APTS-SC-009, APTS-SC-017, APTS-MR-023, APTS-HO-008, APTS-AR-012, APTS-MR-019
 
-## Test 7: Audit Trail Under Concurrent Halt
+## MA-T07: Audit Trail Under Concurrent Halt
 
 **Applicable Tiers:** Tier 1, Tier 2, Tier 3
 
@@ -205,7 +205,7 @@ The `Customer_Acceptance_Testing.md` appendix covers single-agent kill-switch te
 
 **Preconditions:**
 
-- Platform running $\ge$ 3 concurrent workers generating steady activity logs.
+- Platform running 3 or more concurrent workers generating steady activity logs.
 
 **Procedure:**
 
@@ -226,7 +226,7 @@ The `Customer_Acceptance_Testing.md` appendix covers single-agent kill-switch te
 
 - APTS-AR-006, APTS-AR-012, APTS-AR-020, APTS-HO-008, APTS-MR-019
 
-## Test 8: Scope Race Conditions Across Workers
+## MA-T08: Scope Race Conditions Across Workers
 
 **Applicable Tiers:** Tier 2, Tier 3
 
@@ -236,7 +236,7 @@ The `Customer_Acceptance_Testing.md` appendix covers single-agent kill-switch te
 
 **Preconditions:**
 
-- Platform running $\ge$ 2 concurrent workers tasked with reconnaissance.
+- Platform running 2 or more concurrent workers tasked with reconnaissance.
 
 **Procedure:**
 
@@ -255,7 +255,7 @@ The `Customer_Acceptance_Testing.md` appendix covers single-agent kill-switch te
 
 - APTS-SE-006, APTS-SE-007, APTS-SE-009
 
-## Test 9: Heterogeneous Autonomy Level Fleet Halt Behavior
+## MA-T09: Heterogeneous Autonomy Level Fleet Halt Behavior
 
 **Applicable Tiers:** Tier 3
 

@@ -47,6 +47,8 @@ The [appendices](./appendix/) provide cross-cutting resources: checklists, compl
 | [Shift Handoff Template](./appendix/Shift_Handoff_Template.md) | Informative template for documenting operator shift handoffs, pending approvals, safety signals, and authority transfer |
 | [Advisory Requirements](./appendix/Advisory_Requirements.md) | Non-mandatory practices for enhanced assurance |
 | [Incident Response Integration](./appendix/Incident_Response_Integration.md) | Unified incident response workflow across domains |
+| [Multi-Agent Coordination](./appendix/Multi_Agent_Coordination.md) | Shared state, rate limits, and safety synchronization across multiple workers |
+| [Multi-Agent Acceptance Testing](./appendix/Multi_Agent_Acceptance_Testing.md) | Distributed safety verification procedures for multi-agent platforms |
 
 ## Machine-readable export
 
