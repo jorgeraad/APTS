@@ -107,7 +107,7 @@ Organizations MUST implement version pinning for all AI models to enable change 
 - Find rollback procedure documentation
 - Verify testing before production deployment
 
-> **See also:** APTS-AR-019 (AI/ML model change tracking and drift detection), APTS-TP-019 (AI model provenance and training data governance)
+> **See also:** APTS-AR-019 (AI/ML model change tracking and drift detection), APTS-TP-019 (AI model provenance and training data governance). For an illustrative evidence format, see the [Model Change and Drift Record Template](../appendix/Model_Change_and_Drift_Record_Template.md).
 
 ---
 
@@ -409,7 +409,7 @@ Organizations MUST establish and document a data retention policy that specifies
 - Verify deletion method is documented and appropriate to the storage medium
 - Check audit logs: verify deletion events are recorded with timestamp and method
 
-> **See also:** APTS-TP-016 (data destruction proof and certification)
+> **See also:** APTS-TP-016 (data destruction proof and certification). For an illustrative evidence format, see the [Data Retention and Disposal Record Template](../appendix/Data_Retention_and_Disposal_Record_Template.md).
 
 ---
 
@@ -623,7 +623,7 @@ Foundation model changes are not routine dependency updates. A model upgrade can
 4. **Customer notification review:** Verify that customers with active engagements at the time of the change were notified within the timeframe stated in the operator's policy, and that the notification included the outcome of the re-assessment.
 5. **Rollback test:** Verify that the prior model configuration and disclosure are preserved and that the operator's runbook supports reverting to the prior configuration under APTS-TP-002.
 
-> **See also:** APTS-TP-001 (provider vetting), APTS-TP-002 (model version pinning and change management), APTS-TP-021 (foundation model disclosure and capability baseline), APTS-AR-019 (continuous model change tracking and drift detection).
+> **See also:** APTS-TP-001 (provider vetting), APTS-TP-002 (model version pinning and change management), APTS-TP-021 (foundation model disclosure and capability baseline), APTS-AR-019 (continuous model change tracking and drift detection). For an illustrative evidence format, see the [Model Change and Drift Record Template](../appendix/Model_Change_and_Drift_Record_Template.md).
 
 ---
 

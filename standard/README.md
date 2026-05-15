@@ -38,6 +38,8 @@ The [appendices](./appendix/) provide cross-cutting resources: checklists, compl
 | [Scope Change Decision Record Template](./appendix/Scope_Change_Decision_Record_Template.md) | Informative template for documenting approved, rejected, constrained, or deferred scope changes during an engagement |
 | [Autonomy Downgrade Matrix Template](./appendix/Autonomy_Downgrade_Matrix_Template.md) | Informative template for documenting downgrade triggers, autonomy caps, re-authorization paths, and evidence preservation |
 | [Threshold Configuration Template](./appendix/Threshold_Configuration_Template.md) | Simple starter table for documenting operational thresholds, escalation points, and stop conditions |
+| [Model Change and Drift Record Template](./appendix/Model_Change_and_Drift_Record_Template.md) | Informative template for documenting model changes, behavioral comparison, drift review, re-attestation, and rollback evidence |
+| [Data Retention and Disposal Record Template](./appendix/Data_Retention_and_Disposal_Record_Template.md) | Informative template for documenting retention decisions, disposal execution, deletion verification, exceptions, and customer deletion requests |
 | [Evidence Package Manifest](./appendix/Evidence_Package_Manifest.md) | Illustrative manifest for finding evidence, provenance, and downstream handoff |
 | [Evidence Package Manifest Example](./appendix/examples/Evidence_Package_Manifest_Example.md) | Fictional completed example showing finding evidence, provenance, redaction, and export handoff |
 | [Conformance Claim Schema](./appendix/Conformance_Claim_Schema.md) | Illustrative machine-readable schema for structured conformance claims |

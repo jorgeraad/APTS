@@ -85,6 +85,8 @@ Depending on your role:
 | [Scope Change Decision Record Template](appendix/Scope_Change_Decision_Record_Template.md) | Informative | Template for documenting approved, rejected, constrained, or deferred scope changes during an engagement |
 | [Autonomy Downgrade Matrix Template](appendix/Autonomy_Downgrade_Matrix_Template.md) | Informative | Template for documenting downgrade triggers, autonomy caps, re-authorization paths, and evidence preservation |
 | [Threshold Configuration Template](appendix/Threshold_Configuration_Template.md) | Informative | Simple starter table for documenting operational thresholds, escalation points, and stop conditions |
+| [Model Change and Drift Record Template](appendix/Model_Change_and_Drift_Record_Template.md) | Informative | Template for documenting model changes, behavioral comparisons, drift detections, re-attestation decisions, and rollback evidence |
+| [Data Retention and Disposal Record Template](appendix/Data_Retention_and_Disposal_Record_Template.md) | Informative | Template for documenting retention decisions, secure deletion, disposal verification, exceptions, and customer deletion requests |
 | [Advisory Requirements](appendix/Advisory_Requirements.md) | Informative | Best-practice requirements not gated to any compliance tier |
 
 ## Common Questions
