@@ -198,6 +198,15 @@ What matters is reconstructability. If a reviewer cannot tell which agent knew w
 
 **Related normative requirements:** APTS-AR-001, APTS-AR-020, APTS-HO-005, APTS-RP-004.
 
+## Multi-Agent Acceptance Test Scenarios
+
+Distributed safety controls require specific concurrency validation beyond the single-agent tests covered in the `Customer_Acceptance_Testing.md` appendix.
+
+The full suite of multi-agent concurrency tests-verifying kill-switch propagation, budget enforcement, and anomaly containment across multiple workers-has been moved to a dedicated appendix.
+
+See: [Multi-Agent Acceptance Testing](Multi_Agent_Acceptance_Testing.md)
+
+
 ## Mapping to existing APTS requirements
 
 | Coordination concern | Example implementation focus | Primary APTS anchors |

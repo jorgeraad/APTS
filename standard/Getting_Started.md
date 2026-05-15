@@ -70,6 +70,8 @@ Depending on your role:
 | [Customer Acceptance Testing](appendix/Customer_Acceptance_Testing.md) | Informative | Hands-on verification tests |
 | [Incident Response Integration](appendix/Incident_Response_Integration.md) | Informative | Operational integration guidance |
 | [Cross-Domain Integration](appendix/Cross_Domain_Integration.md) | Informative | Cross-domain trigger mappings and dependency analysis |
+| [Multi-Agent Coordination](appendix/Multi_Agent_Coordination.md) | Informative | Multi-agent coordination safeguards |
+| [Multi-Agent Acceptance Testing](appendix/Multi_Agent_Acceptance_Testing.md) | Informative | Multi-agent hands-on verification tests |
 | [Testing Phase Mapping](appendix/Testing_Phase_Mapping.md) | Informative | Requirements mapped to pentesting lifecycle phases |
 | [Evidence Request Checklist](appendix/Evidence_Request_Checklist.md) | Informative | Lightweight checklist of artifacts customers and reviewers can request |
 | [Human Review Record Template](appendix/Human_Review_Record_Template.md) | Informative | Illustrative template for documenting reviewer approval of critical findings |
