@@ -820,7 +820,7 @@ When the platform depends on external AI/ML models (for example, third-party LLM
 8. If baseline test results deviate beyond a defined tolerance on any safety-critical decision, the platform MUST alert the operator and MUST NOT proceed with affected decision paths until the drift is reviewed and acknowledged.
 9. Drift detection results MUST be logged and available to customers.
 
-> **See also:** APTS-TP-002 (model version pinning), APTS-TP-019 (model provenance and training data governance), APTS-TP-022 (re-attestation on material model change), APTS-AR-017 (regression testing triggered by model updates), APTS-AR-018 (customer notification for behavior-affecting model updates).
+> **See also:** APTS-TP-002 (model version pinning), APTS-TP-019 (model provenance and training data governance), APTS-TP-022 (re-attestation on material model change), APTS-AR-017 (regression testing triggered by model updates), APTS-AR-018 (customer notification for behavior-affecting model updates). For an illustrative evidence format, see the [Model Change and Drift Record Template](../appendix/Model_Change_and_Drift_Record_Template.md).
 
 ### Verification
 
