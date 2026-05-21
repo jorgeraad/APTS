@@ -347,6 +347,7 @@ This pattern ensures that credentials never appear in inference requests sent to
 - Enforce minimal credential permissions (least privilege)
 - Prevent credential reuse across engagements
 - For discovery interception, use pattern-based detection (regex for common secret formats like API keys, JWTs, connection strings) combined with entropy analysis to identify high-entropy strings that may be secrets
+- Consider using the [Credential and Secret Lifecycle Record Template](../appendix/Credential_and_Secret_Lifecycle_Record_Template.md) to track provenance, authorized use, access evidence, rotation, revocation, retention, and disposal for each secret reference
 - Discovery interception adds latency to tool results; implement it as a lightweight synchronous filter rather than a separate inference call
 
 **Common Pitfalls:**

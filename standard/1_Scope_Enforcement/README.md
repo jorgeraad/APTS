@@ -865,7 +865,7 @@ The platform MUST maintain a complete lifecycle for all credentials and secrets 
 11. **(LLM-based platforms)** Provide the agent with a client-provided credential via the platform's credential API. Inspect the model prompt or context window content sent to the LLM provider for that inference call. Verify the plaintext secret value does not appear in the prompt, tool call arguments visible to the model, or model-generated output. Only the opaque reference (identifier, type, username, role) should be present.
 12. **(LLM-based platforms)** Plant a discoverable credential (for example, an API key in a configuration file) in a test target. Run the platform against the target. After the agent's tool call returns the file contents, inspect the tool result as it was presented to the model context. Verify the plaintext credential has been replaced with an opaque reference before entering the model context. Verify the original plaintext value is stored only in the credential vault per APTS-MR-019.
 
-> **See also:** APTS-MR-019 (immediate encryption at the moment of credential discovery; SE-023 item 10 extends this protection to the LLM inference pipeline).
+> **See also:** APTS-MR-019 (immediate encryption at the moment of credential discovery; SE-023 item 10 extends this protection to the LLM inference pipeline). The [Credential and Secret Lifecycle Record Template](../appendix/Credential_and_Secret_Lifecycle_Record_Template.md) provides an optional structure for documenting credential provenance, scope, access, rotation, revocation, retention, and disposal evidence.
 
 ---
 
