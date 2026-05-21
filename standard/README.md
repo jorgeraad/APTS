@@ -47,6 +47,7 @@ The [appendices](./appendix/) provide cross-cutting resources: checklists, compl
 | [Conformance Claim Example](./appendix/examples/Conformance_Claim_Example.md) | Fictional completed example showing how an operator might document an APTS conformance claim |
 | [Evidence Request Checklist](./appendix/Evidence_Request_Checklist.md) | Simple artifact checklist for customer and reviewer evidence requests |
 | [Human Review Record Template](./appendix/Human_Review_Record_Template.md) | Illustrative template for documenting reviewer approval of critical findings |
+| [Operator Competency Record Template](./appendix/Operator_Competency_Record_Template.md) | Informative template for documenting operator qualification, training, assessment, remediation, and succession evidence |
 | [Shift Handoff Template](./appendix/Shift_Handoff_Template.md) | Informative template for documenting operator shift handoffs, pending approvals, safety signals, and authority transfer |
 | [Incident Response Drill Record Template](./appendix/Incident_Response_Drill_Record_Template.md) | Informative template for documenting incident response tabletop exercises, simulations, evidence capture, and corrective actions |
 | [Advisory Requirements](./appendix/Advisory_Requirements.md) | Non-mandatory practices for enhanced assurance |

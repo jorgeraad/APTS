@@ -312,6 +312,8 @@ Practical guidance for implementing APTS Human Oversight requirements. Each sect
 
 Competency MUST be validated through practical assessment (not just attendance). Reassessment is required annually or after any incident involving operator error.
 
+The [Operator Competency Record Template](../appendix/Operator_Competency_Record_Template.md) provides an optional structure for recording autonomy-level authorization, training completion, incident-response readiness, assessment outcomes, remediation restrictions, mentoring, and succession evidence.
+
 ---
 
 ## APTS-HO-019: 24/7 Operational Continuity and Shift Handoff

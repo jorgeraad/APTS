@@ -887,6 +887,8 @@ Operators MUST participate in ongoing competency assessments conducted at least 
 11. **Succession plan review**: Verify succession plans documented and current
 12. **Mentoring plan audit**: Verify formal mentoring plans exist with regular meetings
 
+> **See also:** The [Operator Competency Record Template](../appendix/Operator_Competency_Record_Template.md) provides an optional structure for collecting qualification, training, assessment, remediation, mentoring, and succession evidence.
+
 ---
 
 ## Escalation Priority Matrix
