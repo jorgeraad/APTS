@@ -127,7 +127,7 @@ All API calls to external providers MUST use strong authentication and encryptio
 - Verify TLS usage: test API calls with TLS inspection
 - Check monitoring: API usage logs reviewed for anomalies?
 
-> **See also:** APTS-TP-014 (secrets/credential management for provider API keys), APTS-SE-023 (credential and secret lifecycle governance for provider API keys).
+> **See also:** APTS-TP-014 (secrets/credential management for provider API keys), APTS-SE-023 (credential and secret lifecycle governance for provider API keys), and the [Credential and Secret Lifecycle Record Template](../appendix/Credential_and_Secret_Lifecycle_Record_Template.md).
 
 ---
 
