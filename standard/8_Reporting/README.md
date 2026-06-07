@@ -431,3 +431,5 @@ When the platform integrates with downstream systems for finding delivery (ticke
 ---
 
 > **See also:** [APTS-RP-A01: Automated Finding Authenticity Verification](../appendix/Advisory_Requirements.md#apts-rp-a01-automated-finding-authenticity-verification-advisory). An advisory practice for screening agent-generated findings for fabricated evidence, hallucinated vulnerabilities, and severity misclassification before human review. Candidate for tier-gated inclusion in v0.2.0.
+>
+> **See also:** [APTS-RP-A02: Delivered Report Artifact Integrity Verification](../appendix/Advisory_Requirements.md#apts-rp-a02-delivered-report-artifact-integrity-verification-advisory). An advisory practice for cryptographically binding the complete delivered report artifact at generation so that post-generation alteration of the deliverable — including the executive summary, coverage, and findings completeness — is detectable. Candidate for tier-gated inclusion in v0.2.0.

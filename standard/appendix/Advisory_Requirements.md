@@ -324,6 +324,29 @@ Implement an automated verification mechanism that screens each reported finding
 
 ---
 
+### APTS-RP-A02: Delivered Report Artifact Integrity Verification (Advisory)
+
+**Rationale:** APTS protects evidence and findings well below the level of the deliverable that reaches the customer. RP-005 cryptographically binds finding *evidence* to the discovery event, RP-004 signs or hashes each link in a finding's *provenance chain*, and AR-010/AR-012 hash evidence and log entries. None of these binds the assembled report artifact the customer actually receives. The executive summary, risk overview, remediation prioritization, vulnerability-coverage and false-positive/false-negative disclosures, and the ordering and completeness of the findings set carry no integrity binding of their own. As a result a report can be altered after generation — a finding dropped or reordered, a severity softened in the summary, a coverage claim edited — by the agent, an operator, or a party in the delivery path, and still pass every per-finding evidence check. The normative requirement set for v0.1.0 is frozen; this practice is a candidate for tier-gated inclusion in v0.2.0 (likely as SHOULD | Tier 2).
+
+**Value:** Platforms that bind the complete delivered artifact give the customer a way to detect any alteration of the report between generation and receipt, and extend integrity to the narrative layer — executive summary, coverage, and accuracy disclosures — that per-finding evidence hashes never reach. This closes the gap between "every finding is provable" and "the document you received is the document we produced."
+
+**Practice Description:**
+
+Bind the complete final report artifact at the moment of generation and make that binding verifiable by the recipient, so that any post-generation modification of the deliverable is detectable. Specifically:
+
+1. **Bind the whole delivered artifact, not just the findings.** Produce a cryptographic signature or hash over the entire artifact the customer receives — every section, including the executive summary and risk overview, remediation guidance, the vulnerability-coverage and false-positive/false-negative disclosures, and the appendices — at generation time, and record it in the audit trail (AR-012).
+2. **Cover the narrative and completeness layer.** The binding should span the parts that per-finding hashes (RP-004, RP-005) do not reach: the summary and prioritization narrative, the coverage matrix, and the ordering and completeness of the findings set, so that dropping, reordering, or re-summarizing findings is detectable rather than silent.
+3. **Make the binding verifiable by the recipient.** Provide the customer a means to confirm the artifact they received matches the one generated — for example a published signature, hash, or signed delivery manifest — without relying on the integrity of the delivery channel itself.
+4. **Tie the artifact binding to finding provenance.** Reference the underlying evidence and provenance records (RP-004, RP-005) from the artifact binding, so that a finding present in the delivered report but absent from provenance, or vice versa, is detectable.
+5. **Handle re-issues explicitly.** A corrected or updated report should produce a new binding with its own audit record rather than silently replacing the prior artifact, so the version a given customer holds is always attributable.
+6. **Record bindings and verification outcomes.** Log the artifact identifier, the binding value, the generating platform version, and any recipient-side or internal verification results in the audit trail.
+
+**Recommendation:** Start by signing or hashing the final artifact at generation and publishing the value to the customer out of band; the [Evidence Package Manifest](examples/Evidence_Package_Manifest_Example.md) already notes signing the manifest before delivery, and this practice extends that discipline from the manifest to the report deliverable itself. Where a full PKI signature is impractical, recording the artifact hash in the tamper-evident audit trail (AR-012) is a meaningful first step that still lets an alteration be caught after the fact.
+
+**Related normative requirements:** APTS-RP-004, APTS-RP-005, APTS-RP-015, APTS-AR-010, APTS-AR-012.
+
+---
+
 ## Relationship to Conformance Tiers
 
 | Tier | Scope | Advisory Practices |
