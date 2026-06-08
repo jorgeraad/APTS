@@ -72,4 +72,4 @@ Licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/). 
 
 | Version | Date | Notes |
 |---------|------|-------|
-| 0.1.0 | April 2026 | Initial release. Eight domains, 173 tier-required requirements across three compliance tiers, plus 18 advisory practices in the appendix. |
+| 0.1.0 | April 2026 | Initial release. Eight domains, 173 tier-required requirements across three compliance tiers, plus 19 advisory practices in the appendix. |

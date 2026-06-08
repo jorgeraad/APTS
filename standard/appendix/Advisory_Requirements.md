@@ -324,6 +324,27 @@ Implement an automated verification mechanism that screens each reported finding
 
 ---
 
+### APTS-RP-A02: Delivered Report Artifact Integrity Verification (Advisory)
+
+**Rationale:** APTS protects the layers beneath the deliverable but not the deliverable itself. RP-005 binds finding evidence to the discovery event, RP-004 signs each link in a finding's provenance chain, and AR-010/AR-012 hash evidence and log entries. None of these binds the assembled report the customer receives. The executive summary, coverage matrix, accuracy disclosures, and the ordering and completeness of the findings set carry no integrity binding of their own, so a report can be altered after generation (a finding dropped or reordered, a severity softened, a coverage claim edited) and still pass every per-finding evidence check. The normative requirement set for v0.1.0 is frozen; this practice is a candidate for tier-gated inclusion in v0.2.0 (likely SHOULD | Tier 2).
+
+**Value:** Binding the complete artifact lets the recipient detect any alteration of the report between generation and receipt, and extends integrity to the narrative and completeness layers that per-finding hashes never reach.
+
+**Practice Description:**
+
+Bind the complete final report artifact at generation and make the binding verifiable by the recipient, so any later modification of the deliverable is detectable:
+
+1. **Bind the whole artifact, not just findings.** Produce a cryptographic signature or hash over the entire delivered artifact, including the executive summary, coverage matrix, accuracy disclosures, and appendices, and record it in the audit trail (AR-012).
+2. **Cover completeness and ordering.** The binding should span the parts per-finding hashes do not reach, so dropping, reordering, or re-summarizing findings is detectable rather than silent.
+3. **Make it verifiable and provenance-linked.** Give the recipient a means to confirm the artifact matches the one generated (a published signature, hash, or signed manifest), and reference the underlying evidence and provenance (RP-004, RP-005) so a finding present in the report but absent from provenance is detectable.
+4. **Version re-issues.** A corrected report should produce a new binding with its own audit record rather than silently replacing the prior artifact.
+
+**Recommendation:** Start by signing or hashing the final artifact at generation and publishing the value out of band; the [Evidence Package Manifest](examples/Evidence_Package_Manifest_Example.md) already notes signing the manifest before delivery, and this extends that discipline to the report itself. Where a full signature is impractical, recording the artifact hash in the tamper-evident audit trail (AR-012) still lets an alteration be caught after the fact.
+
+**Related normative requirements:** APTS-RP-004, APTS-RP-005, APTS-RP-015, APTS-AR-010, APTS-AR-012.
+
+---
+
 ## Relationship to Conformance Tiers
 
 | Tier | Scope | Advisory Practices |

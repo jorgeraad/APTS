@@ -79,7 +79,7 @@ Notation for specifying IP address ranges using a base address and prefix length
 Alternative security measures that mitigate vulnerability when the primary control is missing. Example: Two-factor authentication compensates for weak passwords.
 
 **Compliance Tier**
-One of three progressive levels of APTS conformance. Tier 1 (Foundation) requires 72 core requirements (MUST | Tier 1). Tier 2 (Verified) adds 85 requirements for a cumulative 157 (MUST | Tier 2 + SHOULD | Tier 2). Tier 3 (Comprehensive) adds 16 requirements for a cumulative 173 (MUST | Tier 3 + SHOULD | Tier 3). A platform must meet 100% of requirements assigned to its claimed tier (both MUST and SHOULD). An additional 18 advisory practices in the Advisory Requirements appendix are recommended for highest-assurance engagements but are not counted toward any tier.
+One of three progressive levels of APTS conformance. Tier 1 (Foundation) requires 72 core requirements (MUST | Tier 1). Tier 2 (Verified) adds 85 requirements for a cumulative 157 (MUST | Tier 2 + SHOULD | Tier 2). Tier 3 (Comprehensive) adds 16 requirements for a cumulative 173 (MUST | Tier 3 + SHOULD | Tier 3). A platform must meet 100% of requirements assigned to its claimed tier (both MUST and SHOULD). An additional 19 advisory practices in the Advisory Requirements appendix are recommended for highest-assurance engagements but are not counted toward any tier.
 
 **Confidence Score**
 A numeric value on a 0-100% scale indicating the platform's certainty in a scope boundary determination, target legitimacy assessment, asset classification, or finding validity. Scores below 75% for scope-related decisions trigger mandatory human escalation. See APTS-HO-013, APTS-RP-003.
