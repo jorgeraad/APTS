@@ -1,7 +1,7 @@
 {
   "version": "0.1.0",
   "source": "OWASP Autonomous Penetration Testing Standard",
-  "last_updated": "2026-04-26T10:41:06Z",
+  "last_updated": "2026-06-07T23:55:38Z",
   "requirements": [
     {
       "id": "APTS-SE-001",

@@ -94,7 +94,7 @@ Depending on your role:
 ## Common Questions
 
 **Q: Do I need to implement all 173 requirements?**
-No. Start with Tier 1 (72 requirements). Tier 2 and Tier 3 add requirements progressively for cumulative totals of 157 and 173. An additional 18 advisory practices live in the [Advisory Requirements appendix](appendix/Advisory_Requirements.md) under the `APTS-<DOMAIN>-A0x` identifier pattern; advisory practices are not required for conformance at any tier. See [Introduction: Compliance Tiers](Introduction.md#compliance-tiers) for details.
+No. Start with Tier 1 (72 requirements). Tier 2 and Tier 3 add requirements progressively for cumulative totals of 157 and 173. An additional 19 advisory practices live in the [Advisory Requirements appendix](appendix/Advisory_Requirements.md) under the `APTS-<DOMAIN>-A0x` identifier pattern; advisory practices are not required for conformance at any tier. See [Introduction: Compliance Tiers](Introduction.md#compliance-tiers) for details.
 
 **Q: What if my platform meets most but not all Tier 1 requirements?**
 APTS does not award partial credit. A platform must meet 100% of requirements for its claimed tier. Address gaps before claiming a tier.
